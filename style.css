@@ -1,0 +1,89 @@
+
+body{
+    background-color: #4e4e4e;
+    border: solid rgb(0, 0, 0) 2px;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 12px;
+    font-family: arial;
+    color: white;
+}
+
+.pages{
+    width: 100%;
+    height: 95vh;
+    border: solid rgb(255, 0, 0) 2px;
+    margin: 1% 0;
+    border-radius: 12px;
+    box-shadow: 0 0 6px 3px rgba(255, 0, 0, 0.4);
+}
+.firstpage{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(./abstractFirstPic.jpg);
+}
+.frontdivs{
+    border: solid rgb(157, 255, 0) 3px;
+}
+.h1div{
+    width: 70%;
+    margin: auto;
+    text-align:center;
+    display:flex;
+    justify-content: space-around;
+}
+h1{
+    border: solid rgb(157, 255, 0) 3px;
+    width: fit-content;
+}
+.ptrDiv{
+    width:30%;
+    margin: auto;
+}
+.ptr{
+    width: 80%;
+    height: auto;
+    border-radius: 50% 20% 50% 90%;
+    border: solid rgba(149, 241, 0, 0.8) 6px;
+    box-shadow: 0 0 6px 3px rgba(157, 255, 0, 0.4);
+}
+
+.bottomText{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    border: solid white 2px;
+    bottom: 3%;
+}
+
+
+.secondpage{}
+
+.media{
+    width: 95%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.mediadivs{
+    width: 100%;
+    height: 30%;
+    border: solid white 3px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.icon{
+    width: 33%;
+    height: auto;
+    border:solid rgb(255, 255, 255) 1px;
+}
+.content{
+    width: 100%;
+    height: 70%;
+    border:solid rgb(255, 255, 255) 1px;
+}
