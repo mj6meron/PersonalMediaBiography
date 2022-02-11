@@ -1,16 +1,15 @@
 body {
   background-color: #4e4e4e;
-  border: solid rgb(0, 0, 0) 2px;
-  margin: 1%;
+  margin: 0;
   padding: 1%;
-  border-radius: 12px;
   font-family: arial;
   color: white;
+  text-align: center;
 }
 
 .pages {
   width: 100%;
-  height: 95vh;
+  height: 1500px;
   border: solid rgb(255, 0, 0) 2px;
   margin: 1% 0;
   border-radius: 12px;
@@ -19,11 +18,9 @@ body {
 .firstpage {
   display: flex;
   flex-direction: row;
+  height: 98vh !important;
   justify-content: space-around;
   background-image: url(./abstractFirstPic.jpg);
-}
-.frontdivs {
-  border: solid rgb(157, 255, 0) 3px;
 }
 .h1div {
   width: 70%;
@@ -33,7 +30,6 @@ body {
   justify-content: space-around;
 }
 h1 {
-  border: solid rgb(157, 255, 0) 3px;
   width: fit-content;
 }
 .ptrDiv {
@@ -52,12 +48,30 @@ h1 {
   display: flex;
   justify-content: space-around;
   position: absolute;
-  border: solid white 2px;
   bottom: 3%;
+  width: 90%;
 }
 
 .secondpage {
   padding: 3% 0;
+  background-image: linear-gradient(
+    to bottom,
+    #63422c,
+    #4f3923,
+    #3c301c,
+    #2b2617,
+    #1d1c12,
+    #1d1c12,
+    #1c1b12,
+    #1c1b12,
+    #292417,
+    #382d1d,
+    #493623,
+    #5b3e2c
+  );
+}
+.mediaH1 {
+  margin: auto;
 }
 
 .media {
@@ -68,37 +82,115 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
 }
+
+.descContent,
+.descTitle {
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.1);
+  padding: 4px 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
 .mediadivs {
   width: 100%;
-  height: 30%;
-  border: solid white 3px;
+  height: fit-content;
+  border: solid rgba(255, 255, 255, 0.5) 3px;
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.4);
+  padding: 2% 0;
   border-radius: 12px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.3);
 }
+
 .icon {
   width: 30%;
-  height: auto;
-  border: solid rgb(255, 255, 255) 1px;
+  height: fit-content;
+  border: solid rgba(255, 255, 255, 0.3) 3px;
   border-radius: 15px;
+  background-image: radial-gradient(
+    circle,
+    #493223,
+    #473421,
+    #453620,
+    #423820,
+    #3f3a20,
+    #3f3a20,
+    #3f3a20,
+    #3f3a20,
+    #423820,
+    #453620,
+    #473421,
+    #493223
+  );
 }
+
 .content {
   width: 100%;
   height: 70%;
-  border: solid rgb(255, 255, 255) 1px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-iframe {
-  border: solid rgb(89, 109, 0) 2px;
-  border-radius: 15px;
+
+.audio {
+  padding: 5% 0;
 }
+
+iframe {
+  border-radius: 15px;
+  max-width: 99% !important;
+}
+.summary {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 2%;
+}
+.personlMediaBiography {
+  margin: 5% auto;
+  color: white;
+}
+
 .img {
   width: auto;
   height: 98% !important;
-  border: solid rgb(89, 109, 0) 2px;
   border-radius: 15px;
+  max-width: 99% !important;
+}
+
+@media (max-width: 768px) {
+  .root {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  .mediadivs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .icon {
+    width: 95%;
+    height: fit-content;
+    margin: 2% auto;
+  }
+  .secondpage {
+    margin-top: 2%;
+    height: fit-content;
+  }
+  .mediaH1 {
+    font-size: large;
+    margin: 3% auto;
+  }
+  .personlMediaBiography {
+    font-size: large;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: smaller;
+  }
 }
